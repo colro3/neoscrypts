@@ -12,7 +12,10 @@ class Participation extends BaseModel
 //    use SoftDeletes;
 
     protected $table = ConfigurationManager::PARTICIPATION_TABLE;
+
     protected $fillable = [
+        'messageable_id',
+        'messageable_type',
         'conversation_id',
         'settings',
     ];
